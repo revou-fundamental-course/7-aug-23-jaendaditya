@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/file.css">
     <title>kalkulator jags</title>
 </head>
@@ -18,23 +19,20 @@
         
 
         <img src="segitigaABC.jpg">
-        <form>
+        <form id="form">
             <label>input sisi 1:</label><br>
-            <input type="number" name="sisi1" value="0"><br>
+            <input type="number" id="sisi1"><br>
 
             <label>input sisi 2:</label><br>
-            <input type="number" name="sisi2" value="0"><br>
+            <input type="number" id="sisi2"><br>
 
             <label>input sisi 3:</label><br>
-            <input type="number" name="sisi3" value="0"><br>
-
-
-            <label>hasil keliling:</label><br>
-            <input type="number" name="luas"><br>
+            <input type="number" id="sisi3"><br>
             <br>
 
-            <input type="submit" name="hitung" value="hitung">
-            <input type="submit" name="reset" value="reset">
+            <button type="button" onclick="hitungkeliling()">hitung</button>
+            <p id="hasilkeliling"></p>
+            <button type="button" onclick="resetkeliling()">reset</button>
         </form>
     </div>
         

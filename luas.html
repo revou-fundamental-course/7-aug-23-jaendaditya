@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="js/script.js"></script>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/file.css">
     <title>kalkulator jags</title>
@@ -16,21 +17,22 @@
         <p style="text-align: center;">Sebuah web hitung luas dan keliling segitiga dari programmer newbie</p>
         <a href="keliling.html"> klik untuk hitung keliling</a>
 
-        <img src="segitigaABC.jpg"
-        <form>
+        <img src="segitigaABC.jpg">
+
+        <form id="form">
             <label>input alas:</label><br>
-            <input type="number" name="alas" value="0"><br>
+            <input type="number" id="alas"><br>
 
             <label>input tinggi:</label><br>
-            <input type="number" name="tinggi" value="0"><br>
-
-            <label>hasil luas:</label><br>
-            <input type="number" name="luas"><br>
+            <input type="number" id="tinggi"><br>
             <br>
 
-            <input type="submit" name="hitung" value="hitung">
-            <input type="submit" name="reset" value="reset">
+            <button type="button" onclick="hitungluas()">hitung</button>
+            <p id="hasilluas"></p>
+            <button type="button" onclick="resetluas()">reset</button>
+
         </form>
+        
     </div>
         
 
